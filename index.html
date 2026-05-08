@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>E-buug — Privacy Policy</title>
+  <title>E-buug — Privacy & Data Deletion</title>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
     :root {
@@ -155,12 +155,6 @@
       margin-top: 8px;
     }
 
-    .hero-meta span {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
     /* ─── MAIN ─── */
     main {
       max-width: 780px;
@@ -168,23 +162,14 @@
       padding: 48px 24px 80px;
     }
 
-    /* ─── SECTION ─── */
-    .section {
-      margin-bottom: 40px;
-      animation: fadeUp 0.5s ease both;
-    }
+    .section { margin-bottom: 40px; animation: fadeUp 0.5s ease both; }
 
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(16px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
 
     .section-number {
       font-family: 'IBM Plex Mono', monospace;
@@ -195,173 +180,45 @@
       border: 1px solid rgba(0,200,150,0.2);
       padding: 2px 8px;
       border-radius: 4px;
-      letter-spacing: 0.5px;
       flex-shrink: 0;
     }
 
-    .section h2 {
-      font-size: 17px;
-      font-weight: 700;
-      color: var(--white);
-      letter-spacing: -0.2px;
-    }
+    .section h2 { font-size: 17px; font-weight: 700; color: var(--white); }
+    .section p, .section li { color: #b1bac4; font-size: 14.5px; line-height: 1.75; }
 
-    .section p, .section li {
-      color: #b1bac4;
-      font-size: 14.5px;
-      line-height: 1.75;
-    }
-
-    .section ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
+    .section ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
     .section ul li {
-      display: flex;
-      gap: 10px;
-      padding: 10px 14px;
-      background: var(--dark2);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      transition: border-color 0.2s;
+      display: flex; gap: 10px; padding: 10px 14px; background: var(--dark2);
+      border: 1px solid var(--border); border-radius: 8px;
     }
 
-    .section ul li:hover { border-color: var(--green); }
-
-    .li-icon {
-      color: var(--green);
-      flex-shrink: 0;
-      margin-top: 2px;
-      font-size: 15px;
+    .highlight-box {
+      background: rgba(0,200,150,0.05);
+      border: 1px solid var(--green);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
     }
 
-    .li-content strong {
-      display: block;
-      color: var(--white);
-      font-size: 13.5px;
-      font-weight: 600;
-      margin-bottom: 2px;
-    }
+    .li-icon { color: var(--green); flex-shrink: 0; font-size: 15px; }
+    .li-content strong { display: block; color: var(--white); font-size: 13.5px; margin-bottom: 2px; }
 
-    .li-content span {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    /* ─── SECURITY BADGES ─── */
-    .badges {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 12px;
-      margin-top: 16px;
-    }
-
-    .badge-card {
-      background: var(--dark2);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px;
-      text-align: center;
-    }
-
-    .badge-card .badge-icon { font-size: 24px; margin-bottom: 8px; }
-    .badge-card .badge-label { font-size: 12px; font-weight: 600; color: var(--white); }
-    .badge-card .badge-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
-
-    /* ─── DIVIDER ─── */
-    .divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 32px 0;
-    }
-
-    /* ─── CONTACT CARD ─── */
     .contact-card {
       background: linear-gradient(135deg, rgba(0,200,150,0.08) 0%, rgba(0,200,150,0.02) 100%);
       border: 1px solid rgba(0,200,150,0.25);
-      border-radius: 12px;
-      padding: 24px;
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
+      border-radius: 12px; padding: 24px; display: flex; gap: 16px;
     }
 
-    .contact-icon {
-      font-size: 28px;
-      flex-shrink: 0;
-    }
+    footer { border-top: 1px solid var(--border); text-align: center; padding: 28px 24px; color: var(--muted); font-size: 12.5px; }
 
-    .contact-card h3 {
-      color: var(--white);
-      font-size: 15px;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-
-    .contact-card p { color: var(--muted); font-size: 13.5px; }
-
-    .contact-card a {
-      color: var(--green);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .contact-card a:hover { text-decoration: underline; }
-
-    /* ─── FOOTER ─── */
-    footer {
-      border-top: 1px solid var(--border);
-      text-align: center;
-      padding: 28px 24px;
-      color: var(--muted);
-      font-size: 12.5px;
-    }
-
-    footer strong { color: var(--green); }
-
-    /* ─── SOMALI SECTION ─── */
-    .somali-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2px solid var(--border);
-    }
-
-    .somali-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .somali-title h2 {
-      font-size: clamp(22px, 4vw, 32px);
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 8px;
-    }
-
-    .somali-title p {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    /* ─── LANG VISIBILITY ─── */
     [data-lang="so"] { display: none; }
     body.lang-so [data-lang="en"] { display: none; }
     body.lang-so [data-lang="so"] { display: block; }
 
-    /* ─── RESPONSIVE ─── */
-    @media (max-width: 480px) {
-      .hero { padding: 40px 20px 36px; }
-      main { padding: 32px 16px 60px; }
-      .contact-card { flex-direction: column; gap: 10px; }
-    }
   </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="header-inner">
     <a class="logo" href="#">
@@ -375,309 +232,97 @@
   </div>
 </header>
 
-<!-- HERO -->
 <div class="hero">
-  <div class="hero-badge">📄 Legal Document</div>
+  <div class="hero-badge">📄 Privacy & Data Deletion</div>
   <h1 data-lang="en">Privacy <span>Policy</span></h1>
-  <h1 data-lang="so" style="display:none">Xeerka Arrimaha <span>Gaarka ah</span></h1>
+  <h1 data-lang="so">Xeerka <span>Arrimaha Gaarka</span></h1>
   <div class="hero-meta">
-    <span>🗓 Last Updated: May 1, 2026</span>
-    <span>📱 App: E-buug</span>
-    <span>🇸🇴 Developer: E-buug Team — Somalia</span>
+    <span>🗓 Updated: May 2026</span>
+    <span>🇸🇴 E-buug Team</span>
   </div>
 </div>
 
-<!-- MAIN -->
 <main>
-
-  <!-- ═══════════════ ENGLISH ═══════════════ -->
   <div data-lang="en">
-
-    <div class="section" style="animation-delay:0.05s">
-      <p>This Privacy Policy explains how <strong style="color:var(--white)">E-buug</strong> ("we", "our", or "the app") collects, uses, and protects your information when you use our mobile application.</p>
-    </div>
-
-    <hr class="divider"/>
-
-    <!-- 1 -->
-    <div class="section" style="animation-delay:0.1s">
+    <div class="section">
       <div class="section-header">
         <span class="section-number">01</span>
-        <h2>Information We Collect</h2>
+        <h2>Data We Collect</h2>
       </div>
-      <p style="margin-bottom:14px">We collect only the minimum information needed to provide our service:</p>
-      <ul>
-        <li>
-          <span class="li-icon">📞</span>
-          <div class="li-content">
-            <strong>Phone Number</strong>
-            <span>Used as your unique account identifier</span>
-          </div>
-        </li>
-        <li>
-          <span class="li-icon">🏪</span>
-          <div class="li-content">
-            <strong>Shop Name</strong>
-            <span>Used to personalize your experience</span>
-          </div>
-        </li>
-        <li>
-          <span class="li-icon">🔐</span>
-          <div class="li-content">
-            <strong>PIN</strong>
-            <span>Stored as a one-way encrypted hash (SHA-256). We cannot read your PIN.</span>
-          </div>
-        </li>
-        <li>
-          <span class="li-icon">📒</span>
-          <div class="li-content">
-            <strong>Customer Data</strong>
-            <span>Names, phone numbers, and debt records you enter</span>
-          </div>
-        </li>
-        <li>
-          <span class="li-icon">📊</span>
-          <div class="li-content">
-            <strong>App Activity</strong>
-            <span>Last active date, for service improvement</span>
-          </div>
-        </li>
-      </ul>
+      <p>We collect your <strong>Phone Number</strong> for account setup, your <strong>Shop Name</strong> for personalization, and the <strong>Debt Records</strong> you enter manually.</p>
     </div>
 
-    <!-- 2 -->
-    <div class="section" style="animation-delay:0.15s">
-      <div class="section-header">
-        <span class="section-number">02</span>
-        <h2>How We Use Your Information</h2>
-      </div>
-      <ul>
-        <li><span class="li-icon">✅</span><div class="li-content"><span>To create and manage your account</span></div></li>
-        <li><span class="li-icon">✅</span><div class="li-content"><span>To store and sync your debt records securely</span></div></li>
-        <li><span class="li-icon">✅</span><div class="li-content"><span>To provide customer support</span></div></li>
-        <li><span class="li-icon">✅</span><div class="li-content"><span>To send account-related notifications</span></div></li>
-        <li><span class="li-icon">✅</span><div class="li-content"><span>To improve our service</span></div></li>
-      </ul>
-    </div>
-
-    <!-- 3 -->
-    <div class="section" style="animation-delay:0.2s">
-      <div class="section-header">
-        <span class="section-number">03</span>
-        <h2>Data Storage & Security</h2>
-      </div>
-      <div class="badges">
-        <div class="badge-card">
-          <div class="badge-icon">📱</div>
-          <div class="badge-label">Local Storage</div>
-          <div class="badge-sub">SQLite on your device</div>
-        </div>
-        <div class="badge-card">
-          <div class="badge-icon">☁️</div>
-          <div class="badge-label">Cloud Backup</div>
-          <div class="badge-sub">Supabase — encrypted</div>
-        </div>
-        <div class="badge-card">
-          <div class="badge-icon">🔒</div>
-          <div class="badge-label">SHA-256 PIN</div>
-          <div class="badge-sub">We cannot read it</div>
-        </div>
-        <div class="badge-card">
-          <div class="badge-icon">🛡️</div>
-          <div class="badge-label">Row-Level Security</div>
-          <div class="badge-sub">Your data, only yours</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 4 -->
-    <div class="section" style="animation-delay:0.25s">
-      <div class="section-header">
-        <span class="section-number">04</span>
-        <h2>Data Sharing</h2>
-      </div>
-      <p>We do <strong style="color:var(--green)">NOT</strong> sell, trade, or share your personal information with third parties. Your customer data is private and only accessible by you.</p>
-    </div>
-
-    <!-- 5 -->
-    <div class="section" style="animation-delay:0.3s">
+    <div class="section highlight-box">
       <div class="section-header">
         <span class="section-number">05</span>
-        <h2>Data Retention</h2>
+        <h2 style="color: var(--green);">Data Deletion & Account Closure</h2>
       </div>
-      <p>Your data is retained as long as your account is active. You may request deletion of your account and all associated data by contacting us via WhatsApp.</p>
-    </div>
-
-    <!-- 6 -->
-    <div class="section" style="animation-delay:0.35s">
-      <div class="section-header">
-        <span class="section-number">06</span>
-        <h2>Third-Party Services</h2>
-      </div>
-      <ul>
+      <p>We respect your right to be forgotten. You can delete your data in two ways:</p>
+      <ul style="margin-top: 15px;">
         <li>
-          <span class="li-icon">🗄️</span>
-          <div class="li-content">
-            <strong>Supabase</strong>
-            <span>Cloud database and authentication — <a href="https://supabase.com/privacy" target="_blank" style="color:var(--green)">supabase.com/privacy</a></span>
-          </div>
+            <span class="li-icon">📱</span>
+            <div class="li-content">
+                <strong>In-App Deletion</strong>
+                <span>Go to Settings > Profile > Delete Account to permanently remove all data.</span>
+            </div>
+        </li>
+        <li>
+            <span class="li-icon">🌐</span>
+            <div class="li-content">
+                <strong>Web Request</strong>
+                <span>If you no longer have the app installed, email <a href="mailto:E-Buug@outlook.com" style="color:var(--green)">E-Buug@outlook.com</a> to request full data removal.</span>
+            </div>
         </li>
       </ul>
+      <p style="margin-top: 10px; font-size: 13px; color: var(--muted);">* All shop records, customer debts, and account credentials will be wiped from our Supabase servers within 48 hours of your request.</p>
     </div>
 
-    <!-- 7 -->
-    <div class="section" style="animation-delay:0.4s">
-      <div class="section-header">
-        <span class="section-number">07</span>
-        <h2>Children's Privacy</h2>
-      </div>
-      <p>E-buug is designed for business use by adults (18+). We do not knowingly collect data from children under 13.</p>
-    </div>
-
-    <!-- 8 -->
-    <div class="section" style="animation-delay:0.45s">
-      <div class="section-header">
-        <span class="section-number">08</span>
-        <h2>Your Rights</h2>
-      </div>
-      <ul>
-        <li><span class="li-icon">👁️</span><div class="li-content"><span>Access your data at any time within the app</span></div></li>
-        <li><span class="li-icon">🗑️</span><div class="li-content"><span>Request account deletion via WhatsApp support</span></div></li>
-        <li><span class="li-icon">📋</span><div class="li-content"><span>Request a copy of your data</span></div></li>
-      </ul>
-    </div>
-
-    <!-- 9 -->
-    <div class="section" style="animation-delay:0.5s">
-      <div class="section-header">
-        <span class="section-number">09</span>
-        <h2>Changes to This Policy</h2>
-      </div>
-      <p>We may update this Privacy Policy from time to time. We will notify users of significant changes via the app.</p>
-    </div>
-
-    <!-- 10 Contact -->
-    <div class="section" style="animation-delay:0.55s">
+    <div class="section">
       <div class="section-header">
         <span class="section-number">10</span>
         <h2>Contact Us</h2>
       </div>
       <div class="contact-card">
-        <div class="contact-icon">💬</div>
         <div>
-          <h3>We're here to help</h3>
-          <p>For any privacy concerns or data requests, contact us via WhatsApp. We respond within 24 hours.</p>
-          <p style="margin-top:8px">📧 <a href="mailto:E-Buug@outlook.com">E-Buug@outlook.com</a></p>
+          <h3>Privacy Support</h3>
+          <p>Email: <a href="mailto:E-Buug@outlook.com">E-Buug@outlook.com</a></p>
+          <p>Location: Mogadishu, Somalia</p>
         </div>
       </div>
     </div>
+  </div>
 
-  </div><!-- /en -->
-
-
-  <!-- ═══════════════ SOMALI ═══════════════ -->
   <div data-lang="so">
-
-    <div class="section">
-      <p>Xeerkan Arrimaha Gaarka ah wuxuu sharxayaa sida <strong style="color:var(--white)">E-buug</strong> ("annaga", "aplikaashenka") u uruuriyo, u isticmaalo, uguna ilaaliso macluumaadkaaga marka aad isticmaasho aplikaashenkeena.</p>
-    </div>
-
-    <hr class="divider"/>
-
     <div class="section">
       <div class="section-header">
         <span class="section-number">01</span>
-        <h2>Macluumaadka Aan Uruurinno</h2>
+        <h2>Xogta Aan Uruurinno</h2>
       </div>
-      <p style="margin-bottom:14px">Waxaan kaliya uruurinnaa macluumaadka ugu yar ee loo baahdo adeegga:</p>
-      <ul>
-        <li><span class="li-icon">📞</span><div class="li-content"><strong>Lambarka Telefoonka</strong><span>Waxaa loo isticmaalaa aqoonsigaaga gaar ah</span></div></li>
-        <li><span class="li-icon">🏪</span><div class="li-content"><strong>Magaca Dukaanka</strong><span>Waxaa loo isticmaalaa khibradaada si gaar ah u dhigida</span></div></li>
-        <li><span class="li-icon">🔐</span><div class="li-content"><strong>PIN-ka</strong><span>Waxaa lagu kaydiyaa hash-ka SHA-256. Ma awoodno inaan akhrino PIN-kaaga.</span></div></li>
-        <li><span class="li-icon">📒</span><div class="li-content"><strong>Xogta Macaamiisha</strong><span>Magacyada, lambarada telefoonka, iyo diiwaanada deymaha aad galisay</span></div></li>
-        <li><span class="li-icon">📊</span><div class="li-content"><strong>Hawlgalka App-ka</strong><span>Taariikhda ugu dambeysay ee firfircoonida, si loo wanaajiyo adeegga</span></div></li>
-      </ul>
+      <p>Waxaan uruurinnaa <strong>Lambarkaaga Telefoonka</strong>, <strong>Magaca Dukaanka</strong>, iyo <strong>Diiwaanka Deymaha</strong> aad gacanta ku galiso.</p>
     </div>
 
-    <div class="section">
-      <div class="section-header">
-        <span class="section-number">02</span>
-        <h2>Sida Aan U Isticmaalno Macluumaadkaaga</h2>
-      </div>
-      <ul>
-        <li><span class="li-icon">✅</span><div class="li-content"><span>Si loo abuuro oo loo maareeyo koontadaada</span></div></li>
-        <li><span class="li-icon">✅</span><div class="li-content"><span>Si loogu keydiyo oo loogu dajinno diiwaanada deymaha si ammaan ah</span></div></li>
-        <li><span class="li-icon">✅</span><div class="li-content"><span>Si loo bixiyo taageero macmiilka</span></div></li>
-        <li><span class="li-icon">✅</span><div class="li-content"><span>Si loo diro ogeysiisyada la xiriira koontada</span></div></li>
-        <li><span class="li-icon">✅</span><div class="li-content"><span>Si loo wanaajiyo adeeggeena</span></div></li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <span class="section-number">03</span>
-        <h2>Kaydinta Xogta & Amniga</h2>
-      </div>
-      <div class="badges">
-        <div class="badge-card"><div class="badge-icon">📱</div><div class="badge-label">Kaydinta Maxalliga</div><div class="badge-sub">SQLite telefoonkaaga</div></div>
-        <div class="badge-card"><div class="badge-icon">☁️</div><div class="badge-label">Kaydinta Daruuraha</div><div class="badge-sub">Supabase — sir ah</div></div>
-        <div class="badge-card"><div class="badge-icon">🔒</div><div class="badge-label">SHA-256 PIN</div><div class="badge-sub">Ma akhrini karno</div></div>
-        <div class="badge-card"><div class="badge-icon">🛡️</div><div class="badge-label">Amniga Safka</div><div class="badge-sub">Xogta, adigaa leh</div></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <span class="section-number">04</span>
-        <h2>Wadaagida Xogta</h2>
-      </div>
-      <p>Waxaan <strong style="color:var(--green)">AYNA</strong> iibinnin, ganacsannin, ama wadaagin macluumaadkaaga shakhsiga ah dhinacyo saddexaad. Xogta macaamiishaadu waa mid sir ah oo kaliya adiga kuu heli karto.</p>
-    </div>
-
-    <div class="section">
+    <div class="section highlight-box">
       <div class="section-header">
         <span class="section-number">05</span>
-        <h2>Xifaalida Xogta</h2>
+        <h2 style="color: var(--green);">Tirtiridda Xogta (Data Deletion)</h2>
       </div>
-      <p>Xogta waxaa lagu hayaa inta koontadaadu firfircoon tahay. Waxaad codsan kartaa tirtiridda koontadaada iyo xogta la xiriirta adiga oo nala soo xiriiraya WhatsApp.</p>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <span class="section-number">06</span>
-        <h2>Adeegyada Dhinacyada Saddexaad</h2>
-      </div>
-      <ul>
-        <li><span class="li-icon">🗄️</span><div class="li-content"><strong>Supabase</strong><span>Kaydinta daruuraha iyo xaqiijinta — <a href="https://supabase.com/privacy" target="_blank" style="color:var(--green)">supabase.com/privacy</a></span></div></li>
+      <p>Waxaad xaq u leedahay in xogtaada la tirtiro. Labo qaab ayaad u samayn kartaa:</p>
+      <ul style="margin-top: 15px;">
+        <li>
+            <span class="li-icon">📱</span>
+            <div class="li-content">
+                <strong>Gudaha App-ka</strong>
+                <span>Tag Settings > Profile > Delete Account si aad u tirtirto dhamaan xogtaada.</span>
+            </div>
+        </li>
+        <li>
+            <span class="li-icon">🌐</span>
+            <div class="li-content">
+                <strong>Email ahaan</strong>
+                <span>Hadii uusan app-ka kuu dhisnayn, email noogu soo dir <a href="mailto:E-Buug@outlook.com" style="color:var(--green)">E-Buug@outlook.com</a>.</span>
+            </div>
+        </li>
       </ul>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <span class="section-number">07</span>
-        <h2>Arrimaha Carruurta</h2>
-      </div>
-      <p>E-buug waxaa loogu talagalay isticmaalka ganacsiga ee dadka waaweyn (18+). Kuma uruurinnee si ula kac ah xogta carruurta ka yar 13 sano.</p>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <span class="section-number">08</span>
-        <h2>Xuquuqdaada</h2>
-      </div>
-      <ul>
-        <li><span class="li-icon">👁️</span><div class="li-content"><span>Hel xogta aan waqti kasta app-ka gudahiisa</span></div></li>
-        <li><span class="li-icon">🗑️</span><div class="li-content"><span>Codso tirtiridda koontada via taageerada WhatsApp</span></div></li>
-        <li><span class="li-icon">📋</span><div class="li-content"><span>Codso nuqul ka mid ah xogta</span></div></li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <div class="section-header">
-        <span class="section-number">09</span>
-        <h2>Isbedelada Xeerkan</h2>
-      </div>
-      <p>Waxaan cusboonaysiin karnaa Xeerkan Arrimaha Gaarka ah marna marna. Waxaan u ogeysiinaa isticmaalayaasha isbedelada muhiimka ah app-ka dhexdiisa.</p>
     </div>
 
     <div class="section">
@@ -686,23 +331,18 @@
         <h2>Nala Soo Xiriir</h2>
       </div>
       <div class="contact-card">
-        <div class="contact-icon">💬</div>
         <div>
-          <h3>Waxaan halkan u joognaa</h3>
-          <p>Arrimaha arrimaha gaarka ah ama codsiyada xogta, nala soo xiriir via WhatsApp. Waxaan ka jawaabaa 24 saacadood gudahood.</p>
-          <p style="margin-top:8px">📧 <a href="mailto:E-Buug@outlook.com">E-Buug@outlook.com</a></p>
+          <h3>Taageerada Xogta</h3>
+          <p>Email: <a href="mailto:E-Buug@outlook.com">E-Buug@outlook.com</a></p>
+          <p>Goobta: Muqdisho, Soomaaliya</p>
         </div>
       </div>
     </div>
-
-  </div><!-- /so -->
-
+  </div>
 </main>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 <strong>E-buug</strong> — Built with pride in Somalia 🇸🇴</p>
-  <p style="margin-top:6px">E-buug Team · <a href="mailto:E-Buug@outlook.com" style="color:var(--green);text-decoration:none">E-Buug@outlook.com</a></p>
+  <p>© 2026 <strong>E-buug</strong> — Built for Somali Shop Owners 🇸🇴</p>
 </footer>
 
 <script>
